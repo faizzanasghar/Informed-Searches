@@ -406,7 +406,7 @@ class PathfindingApp:
 
         win_h = max(self.grid_h, 500)
         self.screen = pygame.display.set_mode((self.grid_w+PANEL_W, win_h))
-        pygame.display.set_caption("⬡ Dynamic Pathfinding Agent — Cyber Edition")
+        pygame.display.set_caption("Informed Search Pathfinding Agent — By Fort")
         self.clock = pygame.time.Clock()
 
         self.start=(0,0); self.goal=(rows-1,cols-1)
@@ -994,10 +994,10 @@ class PathfindingApp:
         if B["mode_start"].clicked(lev): mode("start")
         if B["mode_goal"].clicked(lev):  mode("goal")
 
-        if B["run"].clicked(lev):     self._run_animated()
+        if B["run"].clicked(lev):     self.runAnimated()
         if B["animate"].clicked(lev): self.runInstantAnimate()
         if B["step_s"].clicked(lev):
-            if self.state==self.ST_IDLE and not self.search_gen: self._run_animated()
+            if self.state==self.ST_IDLE and not self.search_gen: self.runAnimated()
             self.stepAnimated(1)
         if B["clear"].clicked(lev):   self.clearMaze()
         if B["maze"].clicked(lev):    self.newMaze()
