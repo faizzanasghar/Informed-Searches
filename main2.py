@@ -1,15 +1,4 @@
 """
-Dynamic Pathfinding Agent — Phase 1
-====================================
-Features:
-  - Dynamic grid sizing (user-defined rows x cols)
-  - A* and Greedy Best-First Search (GBFS)
-  - Heuristics: Manhattan & Euclidean
-  - 8-directional movement
-  - Interactive map editor (click to toggle walls)
-  - Random maze generation with configurable obstacle density
-  - Visualization: frontier (yellow), visited (blue), path (green)
-  - Real-time metrics: nodes visited, path cost, execution time
 Dynamic Pathfinding Agent — Phase 2  ⬡ CYBER EDITION
 ══════════════════════════════════════════════════════
 Premium GUI featuring:
